@@ -17,9 +17,8 @@ function renderSeriesTable(series: serie[]): void {
         `;
         tableBody.appendChild(row);
 
-        // Evento de clic en el nombre de la serie para mostrar los detalles
         row.querySelector('.series-link')!.addEventListener('click', (event) => {
-            event.preventDefault(); // Evita que el enlace recargue la página
+            event.preventDefault(); 
             showDetails(x);
         });
 
@@ -34,7 +33,6 @@ function renderSeriesTable(series: serie[]): void {
     `;
     tableBody.appendChild(promedioRow);
 
-    // Función para mostrar los detalles de la serie seleccionada
     function showDetails(serie: serie): void {
         detailsContainer.innerHTML = `
             <img src="${serie.image}" alt="${serie.name}">
