@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",                                  // Para compatibilidad con navegadores antiguos
+    "module": "es6",                                  // Asegúrate de usar módulos ES6 para el navegador
+    "rootDir": "./",                                  // Carpeta raíz de tu código TypeScript
+    "outDir": "./scripts",                            // Carpeta donde se guardarán los archivos JavaScript compilados
+    "strict": true,                                   // Habilita todas las verificaciones estrictas de tipos
+    "alwaysStrict": true,                             // Asegura que 'use strict' siempre esté presente en el código emitido
+    "esModuleInterop": true,                          // Facilita la importación de módulos CommonJS
+    "forceConsistentCasingInFileNames": true,         // Asegura que los nombres de archivo coincidan en mayúsculas/minúsculas
+    "skipLibCheck": true                              // Omite la verificación de archivos .d.ts para reducir el tiempo de compilación
+  }
+}
